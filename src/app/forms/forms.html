@@ -1,0 +1,89 @@
+<section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Contact Me</h1>
+        <p class="hero-breadcrumb">
+            <span class="home" [routerLink]="['']">Home</span>
+            <span class="separator">/</span>
+            <span [routerLink]="['Register']">Contact Me</span>
+        </p>
+    </div>
+</section>
+
+<section class="form-section">
+    <div class="form-container">
+
+        <div class="image-panel">
+            <img src="WhatsApp Image 2026-05-14 at 10.56.09 AM.jpeg" alt="ethereal" class="panel-img" />
+            <div class="contact-info-bar">
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="icon-phone-primary (1).svg" alt="">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Phone Number</span>
+                        <span class="contact-value">+(234) 9167064092</span>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="icon-mail-primary.svg" alt="">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Email Address</span>
+                        <span class="contact-value">chizaramesther298@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-panel">
+
+            
+            <div *ngIf="activeTab === 'signup'" class="tab-content">
+                <h2 class="form-title">Contact Me Today</h2>
+                <p class="form-subtitle">
+                    Ready to begin your brand awareness? Contact me and I will take over by making the best web application your customers can surf without wanting to leave.
+                </p>
+
+                <form (ngSubmit)="onSignUp()" #signupForm="ngForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name <span class="required">*</span></label>
+                            <input type="text" class="form-input" placeholder="Enter First Name" name="firstName"
+                                [(ngModel)]="signupData.firstName" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name <span class="required">*</span></label>
+                            <input type="text" class="form-input" placeholder="Enter Last Name" name="lastName"
+                                [(ngModel)]="signupData.lastName" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" class="form-input" placeholder="Enter Email Address" name="email"
+                                [(ngModel)]="signupData.email" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number <span class="required">*</span></label>
+                            <input type="tel" class="form-input" placeholder="Enter Phone Number" name="phone"
+                                [(ngModel)]="signupData.phone" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" placeholder="Any Additional Message..." name="message"
+                            [(ngModel)]="signupData.message" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" [routerLink]="['subscription']">
+                        Submit Message ↗
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

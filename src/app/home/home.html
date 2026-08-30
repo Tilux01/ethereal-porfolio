@@ -1,0 +1,652 @@
+<section class="hero">
+    <video class="hero-video" [autoplay]="true" [muted]="true" [loop]="true" src="IMG_3446 (1).mp4">
+    </video>
+    <!-- <img class="hero-video" src="WhatsApp Image 2026-05-14 at 1.27.20 PM (7).jpeg" alt=""> -->
+
+    <div class="hero_overlay"></div>
+    <div class="hero_gradient"></div>
+
+    <div class="hero_content">
+        <div class="hero_pill">
+            <!-- <div class="hero_avatars">
+                <img src="author-1.jpg" class="hero_avatar" alt="author 1">
+                <img src="author-2.jpg" class="hero_avatar" alt="author 2">
+                <img src="author-3.jpg" class="hero_avatar" alt="author 3">
+                <img src="author-4.jpg" class="hero_avatar" alt="author 4">
+            </div> -->
+
+            <span>Full Stack. Strong App</span>
+        </div>
+
+        <h1 class="hero_headline">
+            Get A Modern Website<br>For Your Brand
+        </h1>
+
+        <p class="hero_sub">
+            Full Stack Developer • JavaScript • Node.js <br> • React • firebase • python
+        </p>
+
+        <button class="hero_cta" [routerLink]="['Register']">Get started Now ↗</button>
+    </div>
+
+    <div class="hero_stats">
+        <div class="hero_stats-number">{{counter()}}%</div>
+        <div class="hero_stats-label">Client Satisfaction Rate</div>
+        <p class="hero_stat-desc">
+            I focus on creating eye catching web app that drives emotion.
+        </p>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about_main">
+        <div class="about_image">
+            <img src="WhatsApp Image 2026-05-14 at 10.56.09 AM.jpeg" class="about-img-large" alt="Body builder image">
+            <img src="WhatsApp Image 2026-05-14 at 10.56.09 AM (1).jpeg" class="about-img-small" alt="a lady working out">
+        </div>
+
+        <div class="about_content">
+            <span class="section-pill">About Me</span>
+
+            <h2 class="about_heading">Who I Am</h2>
+
+            <p class="about_sub">
+                My name is Obiasogu Esther, a passionate and growth-driven Software Developer with a solid foundation in full-stack development and a deep love for clean, efficient code. Skilled in building responsive web applications and crafting intuitive user interfaces. Continuously exploring new technologies to stay ahead in the ever-evolving tech landscape. Seeking opportunities where creativity, collaboration, and problem-solving thrive while contributing to solutions that make life smarter, simpler, and more connected.
+            </p>
+
+            
+
+            <div class="checklist-row">
+                <ul class="checklist">
+                    <li>Frontend Developement</li>
+                    <li>Backend Development</li>
+                    <li>Dev Ops.</li>
+                </ul>
+            </div>
+
+            <button class="about_cta">More about me ↗</button>
+        </div>
+    </div>
+</section>
+
+<section class="programs">
+    <div class="program_section">
+
+        <div class="text_programs">
+            <span class="program-pill">Featured Projects</span>
+            <h2 class="program_text">Making a project work <br>With efficient and security</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card_one card-featured" (click)="toNotePad()">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-1 (1).svg" alt="">
+                    </div>
+                    <span class="card_number">01.</span>
+                </div>
+                <h3>Ethereal NotePad</h3>
+                <p>A modern notepad with diverse of functionality and accessibility</p>
+                <div class="card_link">
+                    <span>View Project</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card_featured" (click)="toKeep()">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-2 (2).svg" alt="">
+
+                    </div>
+                    <span class="card_number">02.</span>
+                </div>
+                <h3>Google Keep Clone</h3>
+                <p>A simple note-taking app with Firebase storage and Google login, built to create, edit, and delete notes across devices. Built with JavaScript, Html, Firebase, and Localstorage. Features drag-and-drop, notifications, and team chat.</p>
+                <div class="card_link">
+                    <span>View Project</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-feature" (click)="toShopEase()">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-3 (1).svg" alt="">
+                    </div>
+                    <span class="card_number">03.</span>
+                </div>
+                <h3>ShopEase</h3>
+                <p>E-commerce platform with secure authentication, payment integration, and admin dashboard. Built with react.js, node.js, MongoDB and Express.</p>
+                <div class="card_link">
+                    <span>View Project</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-bagImage" (click)="toDevFolio()">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-4 (1).svg" alt="">
+                    </div>
+                    <span class="card_number">04.</span>
+                </div>
+                <h3>DevFolio</h3>
+                <p>Portfolio website with interactive UI, animations, and blog. Built with HTML, CSS, Bootstrap, and JavaScript.</p>
+                <div class="card_link">
+                    <span>View Project</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-image" (click)="toWeatherApp()">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-5 (1).svg" alt="">
+
+                    </div>
+                    <span class="card_number">05.</span>
+                </div>
+                <h3>Weather App</h3>
+                <p>A sleek and responsive weather application powered by HTML, CSS, Bootstrap, and JavaScript. It fetches real-time weather data using an API, displaying temperature, conditions, and location with a clean, intuitive interface.</p>
+                <div class="card_link">
+                    <span>View Project</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-Image" (click)="toOraimo()">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-6 (2).svg" alt="">
+
+                    </div>
+                    <span class="card_number">06.</span>
+                </div>
+                <h3>Oriamo Clone</h3>
+                <p>A responsive front-end clone of the Oraimo official website, built using HTML, CSS, Bootstrap, and JavaScript. It replicates the brand’s modern layout, sleek UI components, and mobile-friendly design with attention to detail and responsiveness across devices.</p>
+                <div class="card_link">
+                    <span>View Project</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whychoose">
+    <div class="whychoose_inner">
+        <div class="whychoose_left">
+            <div class="wc_deco-circle"></div>
+
+            <span class="wc_pill">
+                <span class="wc_pill-dot"></span>
+                Why Choose Me
+            </span>
+
+            <h2 class="wc_heading">More than just a<br>website experience</h2>
+
+            <p class="wc_sub">
+                I am a certified Web developer student at SQI college of ICT in Nigeria, I've made not only a lot of projects, but also collaborated in making projects done and especially with my school. I build a secured platform, ensuring reliability for my clients. I have also won numerous award in my school, making me one of the top and and best student.
+            </p>
+
+            <div class="wc_features">
+                <div class="wc_feature-card">
+                    <div class="wc_feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="3" />
+                            <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                        </svg>
+                    </div>
+                    <h4>Certified Full Stack Developer</h4>
+                </div>
+
+                <div class="wc_feature-divider"></div>
+
+                <div class="wc_feature-card">
+                    <div class="wc_feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h4>Building Efficient and secured application</h4>
+                </div>
+            </div>
+
+            <div class="wc_checklist">
+                <div class="wc_check-item">
+                    <span class="wc_check-icon">✓</span>
+                    <span>Website</span>
+                </div>
+                <div class="wc_check-item">
+                    <span class="wc_check-icon">✓</span>
+                    <span>WebApp</span>
+                </div>
+            </div>
+
+            <button class="wc_cta">View Projects ↗</button>
+        </div>
+
+        <div class="whychoose_right">
+            <img src="WhatsApp Image 2026-05-14 at 10.56.07 AM.jpeg" alt="Gym training" class="wc_image">
+        </div>
+    </div>
+
+    <div class="wc_footer-bar">
+        <div class="wc_footer-avatars">
+            <img src="WhatsApp Image 2026-05-14 at 1.30.18 PM.jpeg" alt="">
+            <img src="icon-phone-primary (1).svg" class="green" alt="">
+        </div>
+        <p>Let's make something great work together. <a href="#" class="wc_footer-link">Contact me</a></p>
+    </div>
+</section>
+
+<section class="videobanner">
+    <div *ngIf="showVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-x0efG1seA?si=VyuQbSQBD_UVuC9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <video class="videobanner_bg" [autoplay]="true" [muted]="true" [loop]="true" src="2026-05-14 13-31-41.mp4">
+    </video>
+    <div class="videobanner_overlay"></div>
+
+    <div class="videobanner_content">
+        <span class="vb_pill">
+            <span class="vb_pill-dot"></span>
+            Your E-commerce?
+        </span>
+
+        <h2 class="vb_heading">Contact me now to get <br> your exclusive e-commerce app</h2>
+    </div>
+    <div class="vb_play-btn" (click)="previewVideo()">
+        <img src="watch-video-circle (1).png" class="vb_circle-ring" alt="" srcset="">
+    </div>
+</section>
+
+<section class="features">
+    <div class="features_header">
+        <div class="features_header-left">
+            <span class="features-pill">
+                <span class="features-pill-dot"></span>
+                My Features
+            </span>
+            <h2 class="features_heading">Modern and secure app <br> built for performance</h2>
+        </div>
+
+        <div class="features_header-right">
+            <p class="features_sub">
+                Modern, performance driven features designed to enhance your brand. From
+                design, to develovepment and to deployment.
+            </p>
+            <button class="features_cta">Contact Me ↗</button>
+        </div>
+    </div>
+
+    <div class="features_grid">
+
+        <div class="features_card features_card--dark features_card--tall">
+            <div class="features_card-bg"></div>
+            <div class="features_card-overlay"></div>
+
+            <div class="features_card-tags">
+                <span class="feat-tag">• Beautiful website development</span>
+                <span class="feat-tag">• Back-End with Sql and No-Sql</span>
+                <span class="feat-tag">• Dev-Ops</span>
+            </div>
+
+            <div class="features_card-body">
+                <h3>Make your brand Aesthetic</h3>
+                <p>Building a fast and efficient application is my specialization, feel free to check out my projects</p>
+                <button class="feat-learn-btn">View Projects ↗</button>
+            </div>
+        </div>
+
+        <div class="features_col-mid">
+
+            <div class="features_card features_card--image">
+                <img src="WhatsApp Image 2026-05-14 at 1.27.20 PM (7).jpeg" alt="Gym interior" class="feat-img">
+            </div>
+
+           <div class="features_card features_card--dark features_card--exp">
+                <div class="feat-exp-deco">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2">
+                        <path d="M6 6v36M18 6v36M30 6v36M42 6v36M6 18h36M6 30h36" />
+                    </svg>
+                </div>
+
+                <div class="feat-exp-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                    </svg>
+                </div>
+
+                <h3 class="feat-exp-title">Over 2+ Years<br>Of Experience</h3>
+                <p class="feat-exp-sub">I ensures every website is effective, safe, and tailored to your needs.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="features_col-right">
+
+            <div class="features_card features_card--light">
+                <h4 class="feat-card-title">Backend Skills</h4>
+                <div class="feat-programs-grid">
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>Node Js</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>MySql</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span>PHP</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span>Mongo DB</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="3" />
+                                <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                            </svg>
+                        </div>
+                        <span>Flask</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="3" />
+                                <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                            </svg>
+                        </div>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features_card features_card--light">
+                <h4 class="feat-card-title">Frontend Skills</h4>
+                <p class="feat-card-sub"></p>
+
+                <div class="feat-programs-grid">
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>React js</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>Angular</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span>Vanilla Js</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="3" />
+                                <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                            </svg>
+                        </div>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="3" />
+                                <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                            </svg>
+                        </div>
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>HTML</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wc_footer-bar">
+        <div class="wc_footer-avatars">
+            <img src="WhatsApp Image 2026-05-14 at 1.30.18 PM.jpeg" alt="">
+            <img src="icon-phone-primary (1).svg" class="green" alt="">
+        </div>
+        <p>Let's make something great work together. <a href="#" class="wc_footer-link">Contact me</a></p>
+    </div>
+</section>
+
+
+<section class="pricing">
+    <div class="pricing__container">
+
+        <div class="pricing__header">
+            <span class="pricing__badge">
+                <span class="badge-dot"></span> My Pricing Plans
+            </span>
+            <h2 class="pricing__title">
+                Choose the right plan to make<br> your project come to live
+            </h2>
+        </div>
+
+        <div class="pricing__grid">
+
+            <div class="pricing__card">
+                <div class="pricing__card-top">
+                    <div class="pricing__icon">
+                        <img src="icon-pricing-item-1 (1).svg" alt="Standard" />
+                    </div>
+                    <h3 class="pricing__plan-name">Frontend Development</h3>
+                    <p class="pricing__plan-desc">
+                        Responsive web applications and crafting intuitive user interfaces
+                    </p>
+                    <ul class="pricing__features">
+                        <li>
+                            <span class="feature-check">✓</span>
+                            React Js
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Vanilla
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Angular
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Laravel
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Three Js
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing__card-bottom">
+                    <p class="pricing__classes">Starting from</p>
+                    <div class="pricing__price-row">
+                        <div class="pricing__price">
+                            <span class="price-amount">$300.00</span>
+                        </div>
+                        <button class="pricing__join-btn" [routerLink]="['Register']">Contact Me ↗</button>
+                    </div>
+                    <p class="pricing__trial">Get started with bulding your application interface</p>
+                </div>
+            </div>
+
+            <div class="pricing__card">
+                <div class="pricing__card-top">
+                    <div class="pricing__icon">
+                        <img src="icon-pricing-item-1 (1).svg" alt="Standard" />
+                    </div>
+                    <h3 class="pricing__plan-name">Backend Development</h3>
+                    <p class="pricing__plan-desc">
+                        Get your project to live and dynamic with strong and efficient backend api with use of varieties of libraries
+                    </p>
+                    <ul class="pricing__features">
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Node Js
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            PHP
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            SQL
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            MySQL
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Mongo DB
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Firebase
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            SaaS
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing__card-bottom">
+                    <p class="pricing__classes">Starting from</p>
+                    <div class="pricing__price-row">
+                        <div class="pricing__price">
+                            <span class="price-amount">$400.00</span>
+                        </div>
+                        <button class="pricing__join-btn" [routerLink]="['Register']">Contact Me ↗</button>
+                    </div>
+                    <p class="pricing__trial">Get backend for your project to serve your costumer</p>
+                </div>
+            </div>
+
+<div class="pricing__card pricing__card--cta">
+    <div class="pricing__cta-content">
+        <h3 class="pricing__cta-title">Let's Get Started Now</h3>
+        <p class="pricing__cta-desc">
+            Reach out to me and let's discuss about your project, I am ready and always at your service
+        </p>
+        <p class="pricing__cta-phone">Call Me At: +(234) 9167064092</p>
+        <div class="pricing__cta-btn-row">
+            <button class="pricing__cta-btn" [routerLink]="['Register']">Call Me Today! ↗</button>
+        </div>
+    </div>
+    <div class="pricing__cta-image">
+        <img src="WhatsApp Image 2026-05-14 at 1.24.55 PM.jpeg" alt="ethereal" />
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
